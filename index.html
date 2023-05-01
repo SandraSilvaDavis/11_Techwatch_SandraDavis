@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="A Website to find the latest tech!">
+<meta name="author" content="sandra Davis">
+
+<title>Unit 11 Tech Watch</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- STYLE SHEETS -->
+<link href="css/styles.css" rel="stylesheet">
+     
+</head>
+<body>
+
+<div id="pageWrapper">
+<!-- HEADER HERE -->
+	<header>
+        <img src="images/logov2.png" width="200" height="100" alt="techwatchlogo">
+    </header>
+
+    
+    
+<!-- NAVIGATION HERE -->
+    <nav id="links">
+        <a class="myjump" href="#hamburger">X</a>
+        <ul >
+            <li><a href="#">Consoles</a></li>
+            <li class="active"><a href="#">Tablets</a></li>
+            <li><a href="#">TVs</a></li>
+            <li><a href="#">Headphones</a></li>
+            <li><a href="#">Cameras</a></li>
+            <li><a href="#">Smart Phones</a></li> 
+            <li><a href="#">Wearables</a></li>
+            <li><a href="#">Fitness</a></li>
+            <li><a href="#">Smart Home</a></li>
+            <li><a href="#">Security</a></li>   
+        </ul>
+    </nav>
+    
+    
+<!-- CONTENT HERE -->
+    <main>
+        <h1>Products</h1>
+        <div class="product">
+       <aside>
+            <h2>Apple iPad Pro</h2>
+        </aside>
+        <span><img src="images/tablet001.png" alt="ipad">
+            <figcaption>iPad Pro</figcaption>
+        </span>
+        <section>
+            <p>The iPad Pro is available in two sizes, 11 inches and 12.9 inches, and is a potent and versatile tablet favored by professionals and artists. Its A14 Bionic processor delivers impressive performance, and its ProMotion display technology provides a fluid and responsive experience. The iPad Pro's compatibility with the Apple Pencil 2 and Magic Keyboard makes it an ideal device for sketching and computing. Its efficacy and versatility are its greatest pros, while its price is its greatest con.</p>
+    </section>
+        </div>
+        <div class="product2">
+            <aside>
+        <h2>Samsung Galaxy Tab S7+</h2>
+            </aside>    
+            <span><img src="images/tablet002.png" alt="galaxy">
+                <figcaption>Galaxy Tab S7+</figcaption>
+            </span>
+            <section>
+            <p>The Galaxy Tab S7+ features a 12.4-inch AMOLED display and a potent Snapdragon 865+ processor. It is a premium Android tablet. It also comes with the S Pen stylus, which is ideal for note-taking, drawing, and traversing the user interface. The battery life of the Tab S7+ is exceptional, and it supports 5G connectivity. Its most notable advantage is its breathtaking display and included S Pen, while its most notable disadvantage is its relatively high price.</p>
+        </section>
+        </div>
+        <div class="product">
+            <aside>
+                <h2>Microsoft Surface Pro 7</h2>
+             </aside>
+             <span><img src="images/tablet003.png" alt="surface">
+                 <figcaption>Surface Pro 7</figcaption>
+             </span>
+             <section>
+            <p>The Surface Pro 7 is a convertible tablet/laptop that runs Windows 10 and measures 12.3 inches. It is powered by an Intel Core processor and can effortlessly perform demanding duties. The Surface Pro 7 includes a touchscreen display, detachable keyboard, and stylus for additional functionality. Additionally, it is interoperable with a variety of accessories, making it a versatile device. Its versatility as a laptop/tablet hybrid is its greatest pro, while its comparatively short battery life is its greatest con.</p>
+             </section>
+        </div>
+        </main>
+    
+<!-- FOOTER HERE -->   
+    <footer>
+        &copy; 2023 &bull; Sandra Davis &bull; 123-555-6789
+    </footer>
+
+    
+<!-- HAMBURGER HERE -->
+    <div id="hamburger">
+        <a class="myjump" href="#links">&#9776;</a>
+    </div>
+    
+    </div> <!--end of pagewrapper-->
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "name": "TechWatch",
+          "image": "",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Springville",
+            "addressRegion": "UT",
+            "postalCode": "84663",
+            "streetAddress": "1117 W 400 S"
+          },
+          "url": "https://sandrasilvadolores.com/",
+          "telephone": "(760) 321-7654",
+          "openingHours": "Mo,Tu,We,Th,Fr 09:00-17:00"
+        }
+        </script>
+
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
